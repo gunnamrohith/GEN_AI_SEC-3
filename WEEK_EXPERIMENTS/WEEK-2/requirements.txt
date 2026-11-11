@@ -1,4 +1,0 @@
-python-dotenv
-pytest
-google-genai
-requests
