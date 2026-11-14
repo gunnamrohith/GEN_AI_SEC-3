@@ -1,0 +1,7 @@
+google-genai
+python-dotenv
+pymongo>=4.6,<5
+dnspython
+certifi
+requests
+pytest
