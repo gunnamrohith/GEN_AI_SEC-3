@@ -1,0 +1,231 @@
+
+Baseline
+------------------------------------------------------------
+Requests/day: 2,000
+Input/output tokens per request: 1,200 / 300
+Prices per 1M input/output tokens: $0.3 / $1.2
+Safety margin: 20% (forecast x 1.2)
+Input tokens/day:  2,400,000
+Output tokens/day: 600,000
+Total tokens/day:  3,000,000
+Input/output tokens/month: 72,000,000 / 18,000,000
+Total tokens/month (30 days): 90,000,000
+Estimated cost/request: $0.000720
+Estimated daily cost:   $1.4400
+Estimated monthly cost: $43.20
+Cost/request with margin: $0.000864
+Per-request budget: $0.010000
+Daily cost with margin: $1.7280 / $2.0000 budget
+Monthly cost with margin: $51.84 / $50.00 budget
+Peak input/output/total TPM (before margin): 36,000 / 9,000 / 45,000
+Peak RPM with margin: 36.0 / 60 limit
+Peak TPM with margin: 54,000 / 100,000 limit
+
+CHECKS
+RPM capacity: PASS
+TPM capacity: PASS
+Daily budget: PASS
+Monthly budget: REVIEW
+Per-request budget: PASS
+
+Recommendation: NO-GO - REVISE before build. Review: Monthly budget.
+Planning estimate only, not a billing guarantee. Verify live pricing and
+provider quota rules. Total TPM is simplified; retries are not modeled.
+
+More users: requests/day x2
+------------------------------------------------------------
+Requests/day: 4,000
+Input/output tokens per request: 1,200 / 300
+Prices per 1M input/output tokens: $0.3 / $1.2
+Safety margin: 20% (forecast x 1.2)
+Input tokens/day:  4,800,000
+Output tokens/day: 1,200,000
+Total tokens/day:  6,000,000
+Input/output tokens/month: 144,000,000 / 36,000,000
+Total tokens/month (30 days): 180,000,000
+Estimated cost/request: $0.000720
+Estimated daily cost:   $2.8800
+Estimated monthly cost: $86.40
+Cost/request with margin: $0.000864
+Per-request budget: $0.010000
+Daily cost with margin: $3.4560 / $2.0000 budget
+Monthly cost with margin: $103.68 / $50.00 budget
+Peak input/output/total TPM (before margin): 36,000 / 9,000 / 45,000
+Peak RPM with margin: 36.0 / 60 limit
+Peak TPM with margin: 54,000 / 100,000 limit
+
+CHECKS
+RPM capacity: PASS
+TPM capacity: PASS
+Daily budget: REVIEW
+Monthly budget: REVIEW
+Per-request budget: PASS
+
+Recommendation: NO-GO - REVISE before build. Review: Daily budget, Monthly budget.
+Planning estimate only, not a billing guarantee. Verify live pricing and
+provider quota rules. Total TPM is simplified; retries are not modeled.
+
+Traffic spike: peak RPM -> 51
+------------------------------------------------------------
+Requests/day: 2,000
+Input/output tokens per request: 1,200 / 300
+Prices per 1M input/output tokens: $0.3 / $1.2
+Safety margin: 20% (forecast x 1.2)
+Input tokens/day:  2,400,000
+Output tokens/day: 600,000
+Total tokens/day:  3,000,000
+Input/output tokens/month: 72,000,000 / 18,000,000
+Total tokens/month (30 days): 90,000,000
+Estimated cost/request: $0.000720
+Estimated daily cost:   $1.4400
+Estimated monthly cost: $43.20
+Cost/request with margin: $0.000864
+Per-request budget: $0.010000
+Daily cost with margin: $1.7280 / $2.0000 budget
+Monthly cost with margin: $51.84 / $50.00 budget
+Peak input/output/total TPM (before margin): 61,200 / 15,300 / 76,500
+Peak RPM with margin: 61.2 / 60 limit
+Peak TPM with margin: 91,800 / 100,000 limit
+
+CHECKS
+RPM capacity: REVIEW
+TPM capacity: PASS
+Daily budget: PASS
+Monthly budget: REVIEW
+Per-request budget: PASS
+
+Recommendation: NO-GO - REVISE before build. Review: RPM capacity, Monthly budget.
+Planning estimate only, not a billing guarantee. Verify live pricing and
+provider quota rules. Total TPM is simplified; retries are not modeled.
+
+Longer context: input tokens/request x2
+------------------------------------------------------------
+Requests/day: 2,000
+Input/output tokens per request: 2,400 / 300
+Prices per 1M input/output tokens: $0.3 / $1.2
+Safety margin: 20% (forecast x 1.2)
+Input tokens/day:  4,800,000
+Output tokens/day: 600,000
+Total tokens/day:  5,400,000
+Input/output tokens/month: 144,000,000 / 18,000,000
+Total tokens/month (30 days): 162,000,000
+Estimated cost/request: $0.001080
+Estimated daily cost:   $2.1600
+Estimated monthly cost: $64.80
+Cost/request with margin: $0.001296
+Per-request budget: $0.010000
+Daily cost with margin: $2.5920 / $2.0000 budget
+Monthly cost with margin: $77.76 / $50.00 budget
+Peak input/output/total TPM (before margin): 72,000 / 9,000 / 81,000
+Peak RPM with margin: 36.0 / 60 limit
+Peak TPM with margin: 97,200 / 100,000 limit
+
+CHECKS
+RPM capacity: PASS
+TPM capacity: PASS
+Daily budget: REVIEW
+Monthly budget: REVIEW
+Per-request budget: PASS
+
+Recommendation: NO-GO - REVISE before build. Review: Daily budget, Monthly budget.
+Planning estimate only, not a billing guarantee. Verify live pricing and
+provider quota rules. Total TPM is simplified; retries are not modeled.
+
+Shorter answers: output tokens/request halved
+------------------------------------------------------------
+Requests/day: 2,000
+Input/output tokens per request: 1,200 / 150
+Prices per 1M input/output tokens: $0.3 / $1.2
+Safety margin: 20% (forecast x 1.2)
+Input tokens/day:  2,400,000
+Output tokens/day: 300,000
+Total tokens/day:  2,700,000
+Input/output tokens/month: 72,000,000 / 9,000,000
+Total tokens/month (30 days): 81,000,000
+Estimated cost/request: $0.000540
+Estimated daily cost:   $1.0800
+Estimated monthly cost: $32.40
+Cost/request with margin: $0.000648
+Per-request budget: $0.010000
+Daily cost with margin: $1.2960 / $2.0000 budget
+Monthly cost with margin: $38.88 / $50.00 budget
+Peak input/output/total TPM (before margin): 36,000 / 4,500 / 40,500
+Peak RPM with margin: 36.0 / 60 limit
+Peak TPM with margin: 48,600 / 100,000 limit
+
+CHECKS
+RPM capacity: PASS
+TPM capacity: PASS
+Daily budget: PASS
+Monthly budget: PASS
+Per-request budget: PASS
+
+Recommendation: GO - WITHIN configured planning limits.
+Planning estimate only, not a billing guarantee. Verify live pricing and
+provider quota rules. Total TPM is simplified; retries are not modeled.
+
+Smaller prompts: input tokens/request halved
+------------------------------------------------------------
+Requests/day: 2,000
+Input/output tokens per request: 600 / 300
+Prices per 1M input/output tokens: $0.3 / $1.2
+Safety margin: 20% (forecast x 1.2)
+Input tokens/day:  1,200,000
+Output tokens/day: 600,000
+Total tokens/day:  1,800,000
+Input/output tokens/month: 36,000,000 / 18,000,000
+Total tokens/month (30 days): 54,000,000
+Estimated cost/request: $0.000540
+Estimated daily cost:   $1.0800
+Estimated monthly cost: $32.40
+Cost/request with margin: $0.000648
+Per-request budget: $0.010000
+Daily cost with margin: $1.2960 / $2.0000 budget
+Monthly cost with margin: $38.88 / $50.00 budget
+Peak input/output/total TPM (before margin): 18,000 / 9,000 / 27,000
+Peak RPM with margin: 36.0 / 60 limit
+Peak TPM with margin: 32,400 / 100,000 limit
+
+CHECKS
+RPM capacity: PASS
+TPM capacity: PASS
+Daily budget: PASS
+Monthly budget: PASS
+Per-request budget: PASS
+
+Recommendation: GO - WITHIN configured planning limits.
+Planning estimate only, not a billing guarantee. Verify live pricing and
+provider quota rules. Total TPM is simplified; retries are not modeled.
+
+Higher price: input and output rates x2
+------------------------------------------------------------
+Requests/day: 2,000
+Input/output tokens per request: 1,200 / 300
+Prices per 1M input/output tokens: $0.6 / $2.4
+Safety margin: 20% (forecast x 1.2)
+Input tokens/day:  2,400,000
+Output tokens/day: 600,000
+Total tokens/day:  3,000,000
+Input/output tokens/month: 72,000,000 / 18,000,000
+Total tokens/month (30 days): 90,000,000
+Estimated cost/request: $0.001440
+Estimated daily cost:   $2.8800
+Estimated monthly cost: $86.40
+Cost/request with margin: $0.001728
+Per-request budget: $0.010000
+Daily cost with margin: $3.4560 / $2.0000 budget
+Monthly cost with margin: $103.68 / $50.00 budget
+Peak input/output/total TPM (before margin): 36,000 / 9,000 / 45,000
+Peak RPM with margin: 36.0 / 60 limit
+Peak TPM with margin: 54,000 / 100,000 limit
+
+CHECKS
+RPM capacity: PASS
+TPM capacity: PASS
+Daily budget: REVIEW
+Monthly budget: REVIEW
+Per-request budget: PASS
+
+Recommendation: NO-GO - REVISE before build. Review: Daily budget, Monthly budget.
+Planning estimate only, not a billing guarantee. Verify live pricing and
+provider quota rules. Total TPM is simplified; retries are not modeled.

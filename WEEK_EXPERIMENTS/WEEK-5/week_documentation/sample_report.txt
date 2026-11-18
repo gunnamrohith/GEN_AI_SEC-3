@@ -1,0 +1,33 @@
+
+TOKEN ECONOMICS REPORT
+------------------------------------------------------------
+Requests/day: 2,000
+Input/output tokens per request: 1,200 / 300
+Prices per 1M input/output tokens: $0.3 / $1.2
+Safety margin: 20% (forecast x 1.2)
+Input tokens/day:  2,400,000
+Output tokens/day: 600,000
+Total tokens/day:  3,000,000
+Input/output tokens/month: 72,000,000 / 18,000,000
+Total tokens/month (30 days): 90,000,000
+Estimated cost/request: $0.000720
+Estimated daily cost:   $1.4400
+Estimated monthly cost: $43.20
+Cost/request with margin: $0.000864
+Per-request budget: $0.010000
+Daily cost with margin: $1.7280 / $2.0000 budget
+Monthly cost with margin: $51.84 / $50.00 budget
+Peak input/output/total TPM (before margin): 36,000 / 9,000 / 45,000
+Peak RPM with margin: 36.0 / 60 limit
+Peak TPM with margin: 54,000 / 100,000 limit
+
+CHECKS
+RPM capacity: PASS
+TPM capacity: PASS
+Daily budget: PASS
+Monthly budget: REVIEW
+Per-request budget: PASS
+
+Recommendation: NO-GO - REVISE before build. Review: Monthly budget.
+Planning estimate only, not a billing guarantee. Verify live pricing and
+provider quota rules. Total TPM is simplified; retries are not modeled.
